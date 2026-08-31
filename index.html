@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkirKu - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="sidebar"></div>
+
+    <div class="page">
+        <div id="header"></div>
+
+        <main class="content">
+            <section class="page-heading">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Ringkasan kondisi parkir saat ini.</p>
+                </div>
+                <a class="btn primary" href="pages/parkir.html">+ Kendaraan Masuk</a>
+            </section>
+
+            <section class="statistics">
+                <div class="stat-card">
+                    <div class="stat-icon blue">🚗</div>
+                    <div><p>Total Parkir</p><h2 id="total">0</h2></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon green">🏍️</div>
+                    <div><p>Motor</p><h2 id="motor">0</h2></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon orange">🚘</div>
+                    <div><p>Mobil</p><h2 id="mobil">0</h2></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon purple">🅿️</div>
+                    <div><p>Slot Kosong</p><h2 id="kosong">10</h2></div>
+                </div>
+            </section>
+
+            <section class="grid-2">
+                <div class="panel">
+                    <div class="panel-header">
+                        <div><h2>Area Motor</h2><p>5 slot tersedia</p></div>
+                        <span class="badge motor">Motor</span>
+                    </div>
+                    <div class="mini-slots" id="dashboardMotor"></div>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-header">
+                        <div><h2>Area Mobil</h2><p>5 slot tersedia</p></div>
+                        <span class="badge mobil">Mobil</span>
+                    </div>
+                    <div class="mini-slots" id="dashboardMobil"></div>
+                </div>
+            </section>
+
+            <section class="panel">
+                <div class="panel-header">
+                    <div><h2>Kendaraan Terbaru</h2><p>Kendaraan yang sedang berada di area parkir.</p></div>
+                    <a class="text-link" href="pages/kendaraan.html">Lihat semua →</a>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>No</th><th>Plat</th><th>Jenis</th><th>Slot</th><th>Jam Masuk</th></tr></thead>
+                        <tbody id="recentTable"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

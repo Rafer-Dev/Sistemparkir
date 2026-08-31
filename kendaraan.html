@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkirKu - Kendaraan</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="sidebar"></div>
+    <div class="page">
+        <div id="header"></div>
+        <main class="content">
+            <section class="page-heading">
+                <div><h1>Data Kendaraan</h1><p>Daftar kendaraan yang sedang berada di area parkir.</p></div>
+            </section>
+
+            <section class="panel">
+                <div class="toolbar">
+                    <div><strong id="vehicleCount">0 kendaraan</strong><span class="muted"> sedang parkir</span></div>
+                    <input class="search" id="searchVehicle" type="search" placeholder="Cari nomor polisi...">
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>No</th><th>Plat Nomor</th><th>Jenis</th><th>Slot</th><th>Jam Masuk</th><th>Aksi</th></tr></thead>
+                        <tbody id="vehicleTable"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <div id="footer"></div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>

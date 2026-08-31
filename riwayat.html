@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkirKu - Riwayat</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="sidebar"></div>
+    <div class="page">
+        <div id="header"></div>
+        <main class="content">
+            <section class="page-heading">
+                <div><h1>Riwayat Parkir</h1><p>Catatan kendaraan yang sudah keluar.</p></div>
+                <button class="btn danger" id="clearHistory">Hapus Riwayat</button>
+            </section>
+
+            <section class="statistics">
+                <div class="stat-card"><div class="stat-icon blue">📋</div><div><p>Total Transaksi</p><h2 id="historyTotal">0</h2></div></div>
+                <div class="stat-card"><div class="stat-icon green">💰</div><div><p>Total Pendapatan</p><h2 id="historyIncome">Rp 0</h2></div></div>
+            </section>
+
+            <section class="panel">
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>No</th><th>Plat</th><th>Jenis</th><th>Slot</th><th>Masuk</th><th>Keluar</th><th>Durasi</th><th>Biaya</th></tr></thead>
+                        <tbody id="historyTable"></tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <div id="footer"></div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>

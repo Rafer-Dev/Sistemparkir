@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkirKu - Area Parkir</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="sidebar"></div>
+    <div class="page">
+        <div id="header"></div>
+        <main class="content">
+            <section class="page-heading">
+                <div><h1>Area Parkir</h1><p>Pantau slot motor dan mobil secara langsung.</p></div>
+            </section>
+
+            <section class="panel">
+                <div class="panel-header"><div><h2>🏍️ Area Motor</h2><p>Slot M1 sampai M5</p></div><span class="badge motor">Motor</span></div>
+                <div class="parking-grid" id="motorSlots"></div>
+            </section>
+
+            <section class="panel">
+                <div class="panel-header"><div><h2>🚘 Area Mobil</h2><p>Slot C1 sampai C5</p></div><span class="badge mobil">Mobil</span></div>
+                <div class="parking-grid" id="carSlots"></div>
+            </section>
+
+            <section class="panel">
+                <div class="panel-header"><div><h2>🚗 Kendaraan Masuk</h2><p>Isi data kendaraan untuk menempati slot.</p></div></div>
+                <form class="parking-form" id="parkingForm">
+                    <div class="form-group">
+                        <label for="plat">Nomor Polisi</label>
+                        <input id="plat" type="text" placeholder="Contoh: BK 1234 AB" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="jenis">Jenis Kendaraan</label>
+                        <select id="jenis">
+                            <option value="Motor">🏍️ Motor</option>
+                            <option value="Mobil">🚘 Mobil</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="slot">Slot Parkir</label>
+                        <select id="slot"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>&nbsp;</label>
+                        <button class="btn primary" type="submit">+ Parkir Masuk</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <div id="footer"></div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>
